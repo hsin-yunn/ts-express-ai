@@ -18,8 +18,9 @@ const safetySettings = [
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY as string);
 const model = genAI.getGenerativeModel({
-   model: "gemini-2.5-flash-preview-04-17",
-   safetySettings: safetySettings, });
+  model: "gemini-2.5-flash-preview-04-17",
+  safetySettings: safetySettings,
+});
 
 export const history: string[] = [];
 

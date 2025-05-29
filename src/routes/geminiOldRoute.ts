@@ -1,6 +1,6 @@
 import express from "express";
 import type { Router } from "express";
-import { generateResponse } from "../controllers/geminiController";
+import { generateResponse } from "../controllers/geminiOldController";
 const router: Router = express.Router();
 
 router.post("/generate", generateResponse);
